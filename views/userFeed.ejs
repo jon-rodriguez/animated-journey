@@ -1,0 +1,36 @@
+<%- include('partials/userFeedHeader') %>
+    <div class='container d-flex flex-column'>
+        <div id='profile' class='justify-self-center align-self-center mt-5 row'>
+            <div class='card'>
+                <div class='card-body'>
+                    <% posts.forEach( el=> { %>
+                        <p class='card-text'>
+                            <%= el.user.userName %>
+                        </p>
+
+                        <% }) %>
+                </div>
+            </div>
+        </div>
+        <div class='centerAll row'>
+            <% for(let i=0; i < posts.length; i++) { %>
+                <div class="card pt-3" style="width: 18rem;" id="spacing" data-id='<%= posts[i]._id %>'>
+                    <img src="<%= posts[i].image %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title h4 text-center">
+                            <%= posts[i].title %>
+                        </h5>
+                        <p class='card-text text-center'>
+                            <%= posts[i].caption %>
+                        </p>
+                        <p class="card-text text-center" class="likes">Likes: <%= posts[i].likes%>
+                        </p>
+                    </div>
+                    <div class='card-footer text-center'>
+                        <button type="button" class="btn btn-primary like">like</button>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </div>
+    <%- include('partials/footer') %>

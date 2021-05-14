@@ -1,0 +1,68 @@
+<%- include('partials/profileHeader') %>
+
+	<div class='container d-flex flex-column'>
+		<div id='profile' class='justify-self-center align-self-center mt-5 row'>
+			<div class='card'>
+				<div class='card-body'>
+					<h3>Profile</h3>
+					<p class='card-text'>Username: <%= user.userName %></p>
+					<p class='card-text'>Email: <%= user.email %></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="centerAll">
+			<button class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#addPostModal'>
+				Add Post+
+			</button>
+		</div>
+		<div class='centerAll row'>
+			
+			<% for(let i=0; i < posts.length; i++) { %>
+				<div class="card pt-3" style="width: 18rem;" id="spacing" data-id='<%= posts[i]._id %>'>
+					<img src="<%= posts[i].image %>" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title h4 text-center"><%= posts[i].title %>
+						</h5>
+						<p class='card-text text-center'>
+							<%= posts[i].caption %>
+						</p>
+					</div>
+					<div class='card-footer text-center'>
+						<button class='btn btn-danger del'>Delete</button>
+						<button class='btn btn-warning edit'>Edit</button>
+					</div>
+				</div>
+			<% } %>
+			</div>
+			<div class='modal' id='addPostModal' tabindex="-1">
+				<div class='modal-dialog modal-dialog-centered'>
+					<div class='modal-content'>
+						<div class='modal-header'>
+							<h5 class='modal-title'>Enter Post Information</h5>
+							<button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+						</div>
+						<div class='modal-body'>
+							<form class='form' action='/posts/createPost' method="POST" enctype="multipart/form-data">
+								<div class='form-group'>
+									<label for='title'>Title</label>
+									<input type='text' placeholder='Project title' name='title' id='title' />
+								</div>
+								<div class='form-group'>
+									<label for='image'>Image</label>
+									<input type="file" id='imageUpload' name='file'>
+								</div>
+								<div class='form-group'>
+									<label for='caption'>Caption</label>
+									<textarea id='caption' name='caption' rows='5' cols='30'></textarea>
+								</div>
+								
+								<input type='submit' value='Submit'>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+<%- include('partials/footer') %>

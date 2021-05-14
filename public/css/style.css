@@ -1,0 +1,53 @@
+body {
+    background: rgb(249, 249, 249)
+}
+.centerAll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titlePost{
+    padding-top: 2%;
+}
+.dotRemover{
+    list-style: none;
+}
+#spacing{
+    margin-top: 7%;
+}
+
+.post {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+.post-image > img {
+    height: 400px;
+    width: 400px;
+}
+
+.post-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#profile {
+    margin-bottom: 2%;
+}
+
+.form-group {
+    padding: 10px;
+}
+
+.modal-body {
+    
+}

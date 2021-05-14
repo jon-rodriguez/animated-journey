@@ -1,0 +1,35 @@
+<%- include('partials/indexHeader') %>
+
+<h1 class="slogan">Continue your Journey</h1>
+<% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
+    <div class="alert alert-danger"><%= el.msg %></div>
+    <% }) %> <% } %> <% if (locals.messages.info) { %> <% messages.info.forEach( el => { %>
+    <div class="alert alert-danger"><%= el.msg %></div>
+    <% }) %> <% } %>
+    <!-- <form action="/login" method="POST">
+        <input type="email" name="email" placeholder="Email" />
+        <input type="password" name="password" placeholder="Password" />
+        <input type="submit" />
+    </form>
+<a href="/signup"> Signup</a> -->
+
+
+
+
+<div class='formBox'>
+    
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+      <div class="inputBox">
+        <input type="email"  name="email"  />
+        <label>Email</label>
+      </div>
+      <div class="inputBox">
+        <input type="password" name="password"  />
+        <label>Password</label>
+        <p class="signup">Dont have account? Sign up<a href="/signup"> here.</a></p>
+      </div>
+      <input type="submit" />
+             </form></div>
+       
+             <%- include('partials/footer') %>

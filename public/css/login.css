@@ -1,0 +1,82 @@
+body{
+    margin:0;
+    padding: 0;
+    background: url(https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+  }
+  
+  .formBox{
+    width: 400px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    padding: 0 24px 48px;
+    box-shadow: 0 1px 20px 5px  rgba(255,255,255,0.5);
+    box-sizing: border-box;
+  }
+  
+  .formBox h2{
+    line-height: 48px;
+    margin: 24px 0;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  
+  .formBox .inputBox{
+    position: relative;
+  }
+  .slogan{
+      position: absolute;
+      top: 100px;
+  }
+  .formBox .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+  }
+  
+  .formBox .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .formBox .inputBox input:focus ~ label,
+  .formBox .inputBox input:valid ~ label{
+    top: -18px;
+    left: 0;
+    font-size: 14px;
+    color: #FCDB00;
+  }
+  
+  .formBox input[type="submit"]{
+    background: #FCDB00;
+    border: none;
+    outline: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .formBox input[type="submit"]:hover{
+  background:#a5b00c;}
+        
+.signup {
+    margin-bottom: 20px;
+}
