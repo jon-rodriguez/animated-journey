@@ -21,9 +21,10 @@ async function deleteTodo() {
 				postIdFromJSFile: postId,
 			}),
 		});
+		location.reload();
 		const data = await response.json();
 		console.log(data);
-		location.reload();
+
 	} catch (err) {
 		console.log(err);
 	}

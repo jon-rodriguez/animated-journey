@@ -1,7 +1,7 @@
 {
   "name": "todolist-mvc-auth-microsoft",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Simple ToDo App is built using the MVC Architecture, we have also implemented \"authorization\" so folx can sign up, customize & personalize the app",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
@@ -28,5 +28,13 @@
     "passport-local": "^1.0.0",
     "path": "^0.12.7",
     "validator": "^13.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jon-rodriguez/animated-journey.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jon-rodriguez/animated-journey/issues"
+  },
+  "homepage": "https://github.com/jon-rodriguez/animated-journey#readme"
 }
