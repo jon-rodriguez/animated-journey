@@ -1,6 +1,6 @@
 # Introduction
 
-A Simple ToDo App is built using the MVC Architecture, we have also implemented "authorization" so folx can sign up, customize & personalize the app 
+A social media app built using the MVC Architecture, we have also implemented "authorization" so folx can sign up, customize & personalize their profile.
 
 ---
 
@@ -10,7 +10,7 @@ A Simple ToDo App is built using the MVC Architecture, we have also implemented 
 
 # Objectives
 
-- It's a beginner level app created to understand how MVC concept and logins are added
+- It's a beginner level app social media app created to understand how MVC concept and logins are added/CRUD logic 
 
 ---
 
@@ -22,7 +22,7 @@ A Simple ToDo App is built using the MVC Architecture, we have also implemented 
 
 # Packages/Dependencies used 
 
-connect-mongo, dotenv, ejs, express, express-session, mongodb, mongoose, morgan, nodemon, passport, passport-local
+bcryptjs, cloudinary, connect-mongo, dotenv, ejs, express, express-session, express-flash, mongodb, mongoose, morgan, multer, nodemon, passport, passport-local, 
 
 ---
 
@@ -30,6 +30,11 @@ connect-mongo, dotenv, ejs, express, express-session, mongodb, mongoose, morgan,
 
 `npm install` 
 
+---
+
+# Future Add-ons
+- Currently working to add comment functionality
+- Currently working to add other methods to login
 ---
 
 # Things to add
