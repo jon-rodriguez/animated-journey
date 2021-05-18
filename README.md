@@ -2,6 +2,8 @@
 
 A social media app built using the MVC Architecture, we have also implemented "authorization" so folx can sign up, customize & personalize their profile.
 
+link to working app: `https://animated-journey.herokuapp.com/`
+
 ---
 
 > Be sure to add that lovely star 😀 and fork it for your own copy
