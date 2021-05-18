@@ -10,13 +10,19 @@ A social media app built using the MVC Architecture, we have also implemented "a
 
 # Objectives
 
-- It's a beginner level app social media app created to understand how MVC concept and logins are added/CRUD logic 
+- It's a beginner/intermediate level social media app created to understand how MVC concept and logins are added/CRUD logic to like, post, delete images posted by users.
 
 ---
 
 # Who is this for? 
 
 - It's for beginners & intermediates with little more experience, to help understand the various aspects of building a node app with some complex features
+
+---
+
+# Tech used 
+
+- HTML, CSS, Bootstrap, JavaScript, Express, Node.js, Mongodb/Mongoose, EJS, Cloudinary, Heroku
 
 ---
 
@@ -34,7 +40,7 @@ bcryptjs, cloudinary, connect-mongo, dotenv, ejs, express, express-session, expr
 
 # Future Add-ons
 - Currently working to add comment functionality
-- Currently working to add other methods to login
+- Currently working to add more methods to login
 ---
 
 # Things to add
