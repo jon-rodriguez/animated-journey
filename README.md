@@ -12,7 +12,7 @@ link to working app: `https://animated-journey.herokuapp.com/`
 
 # Objectives
 
-- It's a beginner/intermediate level social media app created to understand how MVC concept and logins are added/CRUD logic to like, post, delete images posted by users.
+- It's an intermediate level social media app created to understand how MVC concept and logins are added/CRUD logic to like, post, delete images posted by users.
 
 ---
 
